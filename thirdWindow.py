@@ -1,8 +1,10 @@
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication,QWidget,QLabel,QPushButton,QVBoxLayout,QHBoxLayout
 from  instr import *
-from secondWindow import *
-class MainWindow(QWidget):
+
+
+
+class ThirdWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.set_appear()
@@ -30,23 +32,4 @@ class MainWindow(QWidget):
 
 
     def connects (self):
-        self.btn_next.clicked.connect(self.next_window)
-
-    def next_window(self):
-        self.hide()
-        self.sec_win = SecondWindow() 
-
-
-
-
-
-
-
-
-
-
-
-
-app = QApplication([])
-mainWindow = MainWindow()
-app.exec_()
+        pass
